@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/topcarry/30DaysMakeCPPServer/build",
-  "command": "/usr/bin/g++    -g   -o CMakeFiles/cppserver.dir/main.cpp.o -c /home/topcarry/30DaysMakeCPPServer/main.cpp",
-  "file": "/home/topcarry/30DaysMakeCPPServer/main.cpp"
-}
-]

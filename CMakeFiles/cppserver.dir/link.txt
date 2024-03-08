@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/cppserver.dir/main.cpp.o  -o cppserver 
