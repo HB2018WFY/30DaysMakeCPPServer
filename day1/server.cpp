@@ -12,10 +12,12 @@ int main(){
     bind(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr));
 
     listen(sockfd, SOMAXCONN);
+    //监听线程
 
     struct sockaddr_in clnt_addr;
     socklen_t clnt_addr_len = sizeof(clnt_addr);
     bzero(&clnt_addr, sizeof(clnt_addr));
-    int clnt_sockfd = accept(sockfd, (sockaddr*)&clnt_addr, &clnt_addr_len);
+    int clnt_sockfd = accept(sockfd, (sockaddr*)&clnt_addr, &clnt_addr_len);//阻塞 等到用户端connect
     printf("new client fd %d! IP: %s Port: %d\n", clnt_sockfd, inet_ntoa(clnt_addr.sin_addr), ntohs(clnt_addr.sin_port));
+    //新的连接线程 通过这个线程通信
 }

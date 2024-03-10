@@ -11,4 +11,4 @@ int main(){
     serv_addr.sin_port=htons(8888);
 
     connect(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr));
-}
+}d 
