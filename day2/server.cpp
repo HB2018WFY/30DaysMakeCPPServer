@@ -2,10 +2,10 @@
 #include<sys/socket.h>
 #include<cstring>
 #include<cstdio>
-#include "util.h"
 #include <c++/8/fstream>
 #include <fstream>
 #include <unistd.h>
+#include "util.h"
 int main(){
     int sockfd=socket(AF_INET,SOCK_STREAM,0);
     struct sockaddr_in serv_addr;
